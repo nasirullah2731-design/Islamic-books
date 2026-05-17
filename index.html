@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mira Digital Library - Nasir Ullah</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">📚 My Library</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#add">Add Book</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div id="image">
+    <img src="Nasir.jpg" alt="">
+  </div>
+  <h1>Welcome to My Digital Library</h1>
+  <p>Created by Nasir Ullah</p>
+  <input type="text" id="search" placeholder="Search books..." onkeyup="searchBooks()">
+</section>
+
+<!-- ADD BOOK -->
+<section id="add" class="panel">
+  <h2>Add New Book (Admin)</h2>
+  <input type="text" id="title" placeholder="Book Title">
+  <input type="text" id="pdf" placeholder="PDF Link">
+  <button onclick="addBook()">Add Book</button>
+</section>
+
+<!-- BOOKS -->
+<section id="books" class="books">
+  <h2>Available Books</h2>
+  <div id="bookList">
+    
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <a href="https://wa.me/923355429746" target="_blank">WhatsApp</a>
+  <a href="https://google.com" target="_blank">Google</a>
+</section>
+
+<footer>
+  <p>© 2026 My Digital Library | Nasir Ullah</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
